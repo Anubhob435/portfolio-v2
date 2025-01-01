@@ -14,11 +14,11 @@ icon.onclick = function() {
     if (document.body.classList.contains("dark-theme")) {
         icon.src = "images/moon.png";
         logo.src = "images/logo-light.png";
-        image.src = "images/portfolio-pic-dark.png";
+        image.src = "images/profile-pic.jpg"; // Corrected dark mode profile picture
     } else {
         icon.src = "images/moon.png";
         logo.src = "images/logo-light.png";
-        image.src = "images/profile-pic.png";
+        image.src = "images/profile-pic.jpg"; // Corrected light mode profile picture
     }
 }
 
