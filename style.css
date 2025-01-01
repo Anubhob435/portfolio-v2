@@ -270,11 +270,16 @@ header.sticky .nav-bar {
 
 .home-container .home-img {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .home-container .home-img img {
-    width: 90;
-    transform: translate(0, 0);
+    width: 300px;  /* Increased from 250px */
+    height: 300px; /* Increased from 250px */
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .home .scroll-down {
@@ -938,6 +943,10 @@ footer a {
     .home .container .content {
         font-size: 0.85rem;
     }
+    .home-container .home-img img {
+        width: 250px;  /* Increased from 200px */
+        height: 250px; /* Increased from 200px */
+    }
     /* =========ABOUT SECTION========= */
     .about .container .content {
         display: grid;
@@ -1014,14 +1023,30 @@ footer a {
         transform: translateY(-65px);
     }
     .home .home-container {
-        display: grid;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2rem;
     }
+    
     .home-container .home-img {
-        position: absolute;
+        position: relative;
+        width: 100%;
+        transform: none;
     }
+    
     .home-container .home-img img {
-        width: 90%;
-        transform: translate(30px, -220px);
+        width: 200px;  /* Increased from 150px */
+        height: 200px; /* Increased from 150px */
+    }
+    
+    .home .home-container .info {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    
+    .media-icons {
+        position: relative;
+        margin-bottom: 2rem;
     }
     .home .home-container .info {
         font-size: 0.8rem;
